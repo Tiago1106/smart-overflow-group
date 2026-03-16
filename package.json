@@ -1,9 +1,30 @@
 {
   "name": "smart-overflow-group",
   "version": "1.0.0",
+  "description": "React component that collapses overflowing inline items into a customizable +N indicator.",
+  "keywords": [
+    "react",
+    "typescript",
+    "overflow",
+    "design-system",
+    "ui",
+    "component",
+    "tags",
+    "chips"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Tiago1106/smart-overflow-group.git"
+  },
+  "homepage": "https://github.com/Tiago1106/smart-overflow-group#readme",
+  "bugs": {
+    "url": "https://github.com/Tiago1106/smart-overflow-group/issues"
+  },
   "type": "module",
   "files": [
-    "dist"
+    "dist",
+    "docs"
   ],
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",

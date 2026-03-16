@@ -1,6 +1,6 @@
 # smart-overflow-group
 
-![smart-overflow-group demo preview](./docs/demo-preview.svg)
+![smart-overflow-group demo preview](./docs/demo-preview.png)
 
 `smart-overflow-group` is a React component for rendering a horizontal group of items that automatically collapses overflowed content into a `+N` indicator.
 
@@ -10,7 +10,7 @@ It is built for design-system and product UI use cases such as tags, chips, badg
 
 Temporary demo URL:
 
-`https://demo-url-placeholder.com`
+`https://smart-overflow-group.vercel.app/`
 
 ## Features
 
