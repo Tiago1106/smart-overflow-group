@@ -1,0 +1,42 @@
+{
+  "name": "smart-overflow-group",
+  "version": "0.0.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/lib.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/lib.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "dev": "vite",
+    "build": "node -e \"import('node:fs').then((fs) => fs.rmSync('dist', { recursive: true, force: true }))\" && tsc -p tsconfig.lib.json && vite build",
+    "build:demo": "node -e \"import('node:fs').then((fs) => fs.rmSync('demo-dist', { recursive: true, force: true }))\" && tsc -p tsconfig.app.json --noEmit && vite build --mode demo",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.2.1",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "@vitejs/plugin-react": "^5.1.0",
+    "tailwindcss": "^4.2.1",
+    "tailwind-merge": "^3.3.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
