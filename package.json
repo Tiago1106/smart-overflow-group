@@ -18,8 +18,8 @@
   "sideEffects": false,
   "scripts": {
     "dev": "vite",
-    "build": "node -e \"import('node:fs').then((fs) => fs.rmSync('dist', { recursive: true, force: true }))\" && tsc -p tsconfig.lib.json && vite build",
-    "build:demo": "node -e \"import('node:fs').then((fs) => fs.rmSync('demo-dist', { recursive: true, force: true }))\" && tsc -p tsconfig.app.json --noEmit && vite build --mode demo",
+    "build": "node -e \"import('node:fs').then((fs) => fs.rmSync('dist', { recursive: true, force: true }))\" && node ./node_modules/typescript/bin/tsc -p tsconfig.lib.json && node ./node_modules/vite/bin/vite.js build",
+    "build:demo": "node -e \"import('node:fs').then((fs) => fs.rmSync('demo-dist', { recursive: true, force: true }))\" && node ./node_modules/typescript/bin/tsc -p tsconfig.app.json --noEmit && node ./node_modules/vite/bin/vite.js build --mode demo",
     "preview": "vite preview"
   },
   "peerDependencies": {
